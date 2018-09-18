@@ -1,1 +1,3 @@
-shortCommit = sh(returnStdout: true, script: "git branch").trim()
+node {
+  shortCommit = sh(returnStdout: true, script: "git branch").trim()
+}
